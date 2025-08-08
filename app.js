@@ -228,7 +228,7 @@ cron.schedule(
   },
   {
     scheduled: true,
-    timezone: "Asia/Kolkata", // Set the timezone to Asia/Kolkata
+    timezone: "Asia/Kolkata",
   }
 );
 
@@ -245,7 +245,7 @@ app.get("*", (req, res) => {
   return  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-const PORT = process.env.PORT || 7999;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);

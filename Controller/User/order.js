@@ -9,8 +9,7 @@ const admin = require('firebase-admin');
 const serviceAccount = require('./serviceAccountKey.json');
 const Admin = require("../../Model/Admin/admin");
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
- 
+credential: admin.credential.cert(serviceAccount),
 });
 const messaging = admin.messaging();
 const FCM = require("fcm-node");

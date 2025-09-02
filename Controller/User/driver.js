@@ -146,16 +146,16 @@ async addDoc(req, res) {
           .toString()
           .substring(1);
           
-            const result =await sendSMS(
-            mobile,        
-           `Your OTP for mobile number verification at Abhinandan Organic is  ${otp}.
+//             const result =await sendSMS(
+//             mobile,        
+//            `Your OTP for mobile number verification at Abhinandan Organic is  ${otp}.
 
-Please use this OTP to complete your verification.`, // Your SMS message
-            'ABHIAN',      // Replace with approved SenderID
-            'TRANS',     // Replace with the route name
-            '1107173641973511689'    // Replace with the DLT Template ID
-        );
-        console.log('SMS sent successfully:', result);
+// Please use this OTP to complete your verification.`, // Your SMS message
+//             'ABHIAN',      // Replace with approved SenderID
+//             'TRANS',     // Replace with the route name
+//             '1107173641973511689'    // Replace with the DLT Template ID
+//         );
+//         console.log('SMS sent successfully:', result);
 
    let check= await otpModel.findOneAndUpdate(
         { mobile },
